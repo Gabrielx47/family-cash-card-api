@@ -19,7 +19,7 @@ public class SecurityConfig {
     SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.authorizeHttpRequests(request -> request
             .requestMatchers("/cashcards/**")
-            .authenticated())
+            .hasRole("CARD-OWNER"))
         .httpBasic(Customizer.withDefaults())
         .csrf(csrf -> csrf.disable());
         return http.build();
@@ -34,11 +34,18 @@ public class SecurityConfig {
     UserDetailsService testOnlyUsers(PasswordEncoder passwordEncoder) {
         User.UserBuilder users = User.builder();
         UserDetails sarah = users
-          .username("sarah1")
-          .password(passwordEncoder.encode("abc123"))
-          .roles() // No roles for now
-          .build();
-        return new InMemoryUserDetailsManager(sarah);
+                .username("sarah1")
+                .password(passwordEncoder.encode("abc123"))
+                .roles("CARD-OWNER") 
+                .build();
+        
+        UserDetails hankOwnsNoCards = users
+                .username("hank-owns-no-cards")
+                .password(passwordEncoder.encode("qrs456"))
+                .roles("NON-OWNER")
+                .build();
+                
+        return new InMemoryUserDetailsManager(sarah, hankOwnsNoCards);
     }
     
 }
