@@ -34,7 +34,7 @@ public class CashCardController {
     {
         Optional<CashCard> cashCardOptional = Optional.ofNullable(cashCardRepository.findByIdAndOwner(requestedId, principal.getName()));
 
-        if (cashCardOptional.isPresent()) {
+        if(cashCardOptional.isPresent()) {
             return ResponseEntity.ok(cashCardOptional.get());
         } else {
             return ResponseEntity.notFound().build();
