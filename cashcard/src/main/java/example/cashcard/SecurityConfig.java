@@ -38,6 +38,11 @@ public class SecurityConfig {
                 .password(passwordEncoder.encode("abc123"))
                 .roles("CARD-OWNER") 
                 .build();
+        UserDetails kumar = users
+                .username("kumar2")
+                .password(passwordEncoder.encode(("xyz789")))
+                .roles("CARD-OWNER")
+                .build();
         
         UserDetails hankOwnsNoCards = users
                 .username("hank-owns-no-cards")
@@ -45,7 +50,7 @@ public class SecurityConfig {
                 .roles("NON-OWNER")
                 .build();
                 
-        return new InMemoryUserDetailsManager(sarah, hankOwnsNoCards);
+        return new InMemoryUserDetailsManager(sarah, hankOwnsNoCards, kumar);
     }
     
 }
