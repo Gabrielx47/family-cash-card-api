@@ -2,9 +2,9 @@
 
 API Restful para gerenciar cartões e movimentações familiares. Sistema construído com base no curso "Building a Restful Web Service" da Spring Academy.
 
-Badges: (status do CI) (coverage) (licença) — substitua pelos links reais.
+<!-- Badges: (status do CI) (coverage) (licença) — substitua pelos links reais. -->
 
-![Static Badge](https://img.shields.io/badge/Spring%20Boot%20-%20v3.5.3%20-%20black?style=for-the-badge&logo=springboot)  ![Static Badge](https://img.shields.io/badge/Gradle%20-%20-%20rgb(29%2C%20162%2C%20189)?style=for-the-badge&logo=gradle&logoColor=rgb(29%2C%20162%2C%20189))  ![Static Badge](https://img.shields.io/badge/H2%20Database%20-%20-%20%2309476b?style=for-the-badge&logo=h2database&logoColor=%2309476b&labelColor=d8d8d8&color=%2309476b)  ![Static Badge](https://img.shields.io/badge/Spring%20Security%20-%20-%20rgb(128%2C%20234%2C%20110)?style=for-the-badge&logo=springsecurity) ![Static Badge](https://img.shields.io/badge/Java%20-%20-green?style=for-the-badge&logo=openjdk&logoColor=orange&labelColor=%2309476b&color=orange)
+![Static Badge](https://img.shields.io/badge/Spring%20Boot%20-%20v3.5.3%20-%20black?style=for-the-badge&logo=springboot)      ![Static Badge](https://img.shields.io/badge/Gradle%20-%20-%20rgb(29%2C%20162%2C%20189)?style=for-the-badge&logo=gradle&logoColor=rgb(29%2C%20162%2C%20189))      ![Static Badge](https://img.shields.io/badge/H2%20Database%20-%20-%20%2309476b?style=for-the-badge&logo=h2database&logoColor=%2309476b&labelColor=d8d8d8&color=%2309476b)      ![Static Badge](https://img.shields.io/badge/Spring%20Security%20-%20-%20rgb(128%2C%20234%2C%20110)?style=for-the-badge&logo=springsecurity)      ![Static Badge](https://img.shields.io/badge/Java%20-%20-green?style=for-the-badge&logo=openjdk&logoColor=orange&labelColor=%2309476b&color=orange)
 
 
 ## Sumário
